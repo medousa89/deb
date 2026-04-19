@@ -30,18 +30,19 @@ jobs:
         run: |
          sudo apt-get update -y
          sudo apt-get install -y sed
+         sudo apt install build-essential dh-make devscripts lintian
    
       # Runs a set of commands using the runners shell
       - name: Run script
         run: |
           ls
-          mkdir deb
-          touch deb/DEBIAN/control
-          mv DEBIAN  deb/
-          mv usr deb/
-          touch deb/DEBIAN/control
+          # mkdir deb
+          # touch deb/DEBIAN/control
+          # mv DEBIAN  deb/
+          # mv usr deb/
+          # touch deb/DEBIAN/control
           ls
-          dpkg-deb --build /deb
+          dpkg-deb --build  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2
           ##sudo dpkg-deb -b /deb  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2.deb
           ls
         
