@@ -39,12 +39,10 @@ jobs:
           # mkdir deb
           # touch deb/DEBIAN/control
           # mv DEBIAN  deb/
-          mv usr/ DEBIAN/
           # touch deb/DEBIAN/control
-          cd ..
           ls
           # dpkg-deb --build  /deb
-          ##sudo dpkg-deb -b /deb  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2.deb
+          dpkg-deb -b /Downloads  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2_all.deb
           ls
         
       - name: commit 
