@@ -36,6 +36,7 @@ jobs:
       - name: Run script
         run: |
           sudo dpkg --configure -a
+          cd /home
           ls
           # mkdir deb
           # touch deb/DEBIAN/control
