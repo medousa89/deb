@@ -35,6 +35,9 @@ jobs:
       - name: Run script
         run: |
           ls
+          mkdir deb
+          mv DEBIAN  deb/
+          mv usr deb/
           sudo touch deb/DEBIAN/control
           ls
           dpkg-deb --build /
