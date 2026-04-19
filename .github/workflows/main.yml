@@ -30,16 +30,18 @@ jobs:
         run: |
          sudo apt-get update -y
          sudo apt-get install -y sed
-         sudo dpkg --configure -a
+         
    
       # Runs a set of commands using the runners shell
       - name: Run script
         run: |
+          sudo dpkg --configure -a
           ls
           # mkdir deb
           # touch deb/DEBIAN/control
           # mv DEBIAN  deb/
           # touch deb/DEBIAN/control
+          touch Downloads/DEBIAN/control
           ls
           # dpkg-deb --build  /deb
           dpkg-deb -b /Downloads  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2_all.deb
