@@ -41,8 +41,9 @@ jobs:
           # mv DEBIAN  deb/
           # mv usr deb/
           # touch deb/DEBIAN/control
+          cd ..
           ls
-          dpkg-deb --build  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2
+          dpkg-deb --build  /deb
           ##sudo dpkg-deb -b /deb  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2.deb
           ls
         
