@@ -37,7 +37,7 @@ jobs:
           ls
           cd ..
           ls
-          dpkg-deb -b   enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2.deb
+          dpkg-deb -b /deb  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2.deb
           ls
         
       - name: commit 
