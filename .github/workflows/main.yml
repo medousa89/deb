@@ -35,7 +35,7 @@ jobs:
       - name: Run script
         run: |
           ls
-          dpkg-deb -b /  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2.deb
+          dpkg-deb -b   enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2.deb
           ls
         
       - name: commit 
