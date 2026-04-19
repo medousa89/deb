@@ -36,16 +36,11 @@ jobs:
       - name: Run script
         run: |
           sudo dpkg --configure -a
-          cd /home
+          cd /home/runner/work/deb/deb
           ls
-          # mkdir deb
-          # touch deb/DEBIAN/control
-          # mv DEBIAN  deb/
-          # touch deb/DEBIAN/control
-          touch Downloads/DEBIAN/control
           ls
           # dpkg-deb --build  /deb
-          dpkg-deb -b /Downloads  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2_all.deb
+          dpkg-deb -b /home/runner/work/deb/deb/Downloads  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2_all.deb
           ls
         
       - name: commit 
