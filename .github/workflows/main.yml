@@ -34,7 +34,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run script
         run: |
-          dpkg-deb -b / enigma2-plugin-extensions-ciefpSettingst2miabertis.deb
+          dpkg-deb -b enigma2-plugin-extensions-ciefpSettingst2miabertis.deb
           ls
         
       - name: commit 
