@@ -35,10 +35,10 @@ jobs:
       - name: Run script
         run: |
           ls
-          cd ..
-          touch deb/DEBIAN/control
+          sudo touch deb/DEBIAN/control
           ls
-          sudo dpkg-deb -b /deb  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2.deb
+          dpkg-deb --build /
+          ##sudo dpkg-deb -b /deb  enigma2-plugin-extensions-ciefpSettingst2miabertis_2.2.deb
           ls
         
       - name: commit 
